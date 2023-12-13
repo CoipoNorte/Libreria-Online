@@ -35,7 +35,7 @@
                 </div>
                 <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-center align-items-center">
                     <div class="d-flex flex-row m-4">
-                        <button class="btn" type="submit"><i class="fa fa-user p-0 m-0"></i></button>
+                        <a class="btn" href="login.php"><i class="fa fa-user p-0 m-0"></i></a>
                         <a class="btn" href="carrito.php"><i class="fa fa-cart-shopping p-0 m-0"></i></a>
                         <span class="contact-number mt-2">+56 9 8919 8933</span>
                     </div>
