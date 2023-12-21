@@ -1,6 +1,6 @@
 <!-- actualizar_cantidad.php -->
 <?php
-include('conexion.php');
+include('../conexion.php');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $id = $_POST['id'];
@@ -10,6 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $sql = "UPDATE carrito SET cantidad = $cantidad WHERE id = $id";
     $conn->query($sql);
 }
+
+include('../closeconexion.php');
 
 header('Location: carrito.php');
 exit();

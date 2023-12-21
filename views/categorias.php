@@ -8,13 +8,13 @@
     <title>Librería Online</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
 <!-- Header -->
-<?php include('header.php'); ?>
+<?php include('./includes/header.php'); ?>
 
 <main class="container mt-5 mb-5">
     <h2 class="mb-4">Categorías</h2>
@@ -22,7 +22,7 @@
     <div class="row">
         <?php
         // Incluir la conexión a la base de datos
-        include('conexion.php');
+        include('../conexion.php');
 
         // Consulta SQL para obtener las categorías
         $sql = "SELECT DISTINCT categoria FROM libros";
@@ -41,13 +41,13 @@
         }
 
         // Cerrar la conexión
-        include('closeconexion.php');
+        include('../closeconexion.php');
         ?>
     </div>
 </main>
 
 <!-- Footer -->
-<?php include('footer.php'); ?>
+<?php include('./includes/footer.php'); ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

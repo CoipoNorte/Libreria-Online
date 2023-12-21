@@ -18,7 +18,7 @@
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand col-md-3 d-flex align-items-center p-0 m-0" href="index.php">Liberia Online</a>
+            <a class="navbar-brand col-md-3 d-flex align-items-center p-0 m-0" href="main.php">Liberia Online</a>
 
             <form class="navbar-search d-none d-lg-block col-md-5" role="search" action="buscar.php" method="get">
                 <div class="input-group">
@@ -40,7 +40,7 @@
                         <span class="contact-number mt-2">+56 9 8919 8933</span>
                     </div>
                     <div class="col-md-7 d-flex flex-column justify-content-center align-items-center">
-                        <div class="nav-item d-block  d-lg-none"><a class="nav-link" href="index.php">Inicio</a></div>
+                        <div class="nav-item d-block  d-lg-none"><a class="nav-link" href="main.php">Inicio</a></div>
                         <div class="nav-item d-block  d-lg-none"><a class="nav-link" href="error.php">Ofertas</a></div>
                         <div class="nav-item d-block  d-lg-none"><a class="nav-link" href="categorias.php">Categorias</a></div>
                         <div class="nav-item d-block  d-lg-none"><a class="nav-link" href="error.php">Juegos de mesa</a></div>
@@ -62,7 +62,7 @@
     </nav>
     <nav class="navbar-menu d-block d-none d-lg-block">
         <div class="d-flex flex-row justify-content-center align-items-center text-center m-0 p-0">
-            <a class="nav-link" href="index.php">Inicio</a>
+            <a class="nav-link" href="main.php">Inicio</a>
             <a class="nav-link" href="error.php">Ofertas</a>
             <a class="nav-link" href="categorias.php">Categorias</a>
             <a class="nav-link" href="error.php">Juegos de mesa</a>

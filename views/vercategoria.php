@@ -8,7 +8,7 @@
     <title>Librería Online</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -41,12 +41,12 @@
 </style>
 
 <!-- Header -->
-<?php include('header.php'); ?>
+<?php include('./includes/header.php'); ?>
 
 <main class="container mt-5 mb-5">
     <?php
     // Incluir la conexión a la base de datos
-    include('conexion.php');
+    include('../conexion.php');
 
     // Obtener la categoría desde la URL
     $categoria = $_GET['categoria'];
@@ -64,7 +64,7 @@
                 <div class="col-md-2 mb-4">
                     <div class="card">
                         <a href="verproducto.php?id=' . $row['id'] . '">
-                            <img src="./img/' . $row['imagen'] . '" class="card-img-top img-thumbnail" alt="Imagen del Producto">
+                            <img src="../img/' . $row['imagen'] . '" class="card-img-top img-thumbnail" alt="Imagen del Producto">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">' . $row['titulo'] . '</h5>
@@ -81,12 +81,12 @@
     }
 
     // Cerrar la conexión
-    include('closeconexion.php');
+    include('../closeconexion.php');
     ?>
 </main>
 
 <!-- Footer -->
-<?php include('footer.php'); ?>
+<?php include('./includes/footer.php'); ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

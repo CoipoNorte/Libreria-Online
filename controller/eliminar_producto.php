@@ -1,6 +1,6 @@
 <!-- eliminar_producto.php -->
 <?php
-include('conexion.php');
+include('../conexion.php');
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
@@ -9,7 +9,7 @@ if (isset($_GET['id'])) {
     $sql = "DELETE FROM carrito WHERE id = $id";
     $conn->query($sql);
 }
-
+include('../closeconexion.php');
 header('Location: carrito.php');
 exit();
 ?>

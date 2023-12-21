@@ -1,7 +1,6 @@
 <!-- productos.php -->
 <style>
     @media (min-width: 992px) {
-        /* Aplica estos estilos solo a pantallas de 992px (tamaño LG) o más grandes */
         .card {
             height: 420px;
             display: flex;
@@ -29,7 +28,7 @@
 <div class="row mt-4">
     <?php
     // Conexion a la DB 
-    include('conexion.php');
+    include('../conexion.php');
 
     // Consulta SQL para obtener los productos
     $sql = "SELECT id, titulo, autor, precio, imagen FROM libros";
@@ -42,7 +41,7 @@
                 <div class="col-md-2 mb-4">
                     <div class="card">
                         <a href="verproducto.php?id=' . $row['id'] . '">
-                            <img src="./img/' . $row['imagen'] . '" class="card-img-top img-thumbnail" alt="Imagen del Producto">
+                            <img src="../img/' . $row['imagen'] . '" class="card-img-top img-thumbnail" alt="Imagen del Producto">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">' . $row['titulo'] . '</h5>
@@ -57,6 +56,6 @@
         echo "parece que nos quedamos sin libros :(";
     }
     // Desconexion de la DB 
-    include('closeconexion.php');
+    include('../closeconexion.php');
     ?>
 </div>

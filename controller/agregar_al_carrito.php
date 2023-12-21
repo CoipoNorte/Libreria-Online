@@ -1,6 +1,6 @@
 <!-- agregar_al_carrito.php -->
 <?php
-include('conexion.php');
+include('../conexion.php');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Obtener los datos del formulario
@@ -24,13 +24,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     // Cierra la conexión
-    include('closeconexion.php');
+    include('../closeconexion.php');
 
     // Redirigir a la página del carrito
     header('Location: verproducto.php?id=' . $libro_id);
     
     exit();
 } else {
+    // Cierra la conexión
+    include('../closeconexion.php');
     // Si el formulario no se envió correctamente, redirigir a la página de inicio o a donde desees
     header('Location: index.php');
     exit();
