@@ -12,7 +12,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 include('../closeconexion.php');
-
-header('Location: carrito.php');
+header('Location: ../views/carrito.php');
 exit();
 ?>

@@ -10,6 +10,6 @@ if (isset($_GET['id'])) {
     $conn->query($sql);
 }
 include('../closeconexion.php');
-header('Location: carrito.php');
+header('Location: ../views/carrito.php');
 exit();
 ?>

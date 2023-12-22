@@ -99,7 +99,7 @@
                             </p>
 
                             <!-- Botón para agregar al carrito -->
-                            <form action="agregar_al_carrito.php" method="post">
+                            <form action="../controller/agregar_al_carrito.php" method="post">
                                 <input type="hidden" name="libro_id" value="<?php echo $libro['id']; ?>">
                                 <input type="hidden" name="libro_titulo" value="<?php echo $libro['titulo']; ?>">
                                 <input type="hidden" name="libro_precio" value="<?php echo $libro['precio']; ?>">

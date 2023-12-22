@@ -62,7 +62,7 @@ if ($result->num_rows > 0) {
                                 <?php echo '$' . $row['precio']; ?>
                             </td>
                             <td>
-                                <form action="actualizar_cantidad.php" method="post">
+                                <form action="../controller/actualizar_cantidad.php" method="post">
                                     <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
                                     <input type="number" name="cantidad" value="<?php echo $row['cantidad']; ?>" min="1">
                                     <button type="submit" class="btn btn-sm btn-success">Actualizar</button>
@@ -72,7 +72,7 @@ if ($result->num_rows > 0) {
                                 <?php echo '$' . $total; ?>
                             </td>
                             <td>
-                                <a href="eliminar_producto.php?id=<?php echo $row['id']; ?>"
+                                <a href="../controller/eliminar_producto.php?id=<?php echo $row['id']; ?>"
                                     class="btn btn-sm btn-danger">Eliminar</a>
                             </td>
                         </tr>
