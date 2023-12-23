@@ -36,4 +36,30 @@ Librería Online es una plataforma que permite a los usuarios explorar y comprar
 4. Administra libros si tienes un rol de administrador.
 5. Agrega libros al carrito y realiza compras.
 
+## Capturas de Pantalla
 
+1. **Página Principal**
+   ![Página Principal](assets/main.png)
+
+2. **Visualización de Libro**
+   ![Visualización de Libro](assets/libro.png)
+
+3. **Búsqueda de Libros**
+   ![Búsqueda de Libros](assets/buscar.png)
+
+4. **Categorías de Libros**
+   ![Categorías de Libros](assets/categorias.png)
+
+5. **Tablero de Administrador**
+   ![Tablero de Administrador](assets/tablero.png)
+
+6. **Edición de Libro (Administrador)**
+   ![Edición de Libro](assets/editar.png)
+
+7. **Carrito de Compras**
+   ![Carrito de Compras](assets/carro.png)
+
+8. **Proceso de Compra**
+   ![Proceso de Compra](assets/comprar.png)
+
+Estas capturas de pantalla proporcionan una vista previa de las características clave de la aplicación.
