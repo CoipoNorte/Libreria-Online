@@ -48,7 +48,7 @@ include('../controller/carritoController.php');
                 </form>
             </div>
             <div class="col-md-4">
-                <div style="max-height: 400px; overflow-y: auto;">
+                <div style="max-height: 90vh; overflow-y: auto;">
                     <table class="table table-borderless">
                         <thead>
                             <tr>

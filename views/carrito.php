@@ -18,7 +18,7 @@ include('../controller/carritoController.php');
     <?php include('./includes/header.php'); ?>
 
     <main class="container mt-5 mb-5">
-        <h2>Carrito de Compras</h2>
+        <h2>Carrito de Compras de <?php echo $_SESSION['nombre']; ?></h2>
         <table class="table">
             <thead>
                 <tr>
