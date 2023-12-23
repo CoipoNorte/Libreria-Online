@@ -39,7 +39,7 @@ Librería Online es una plataforma que permite a los usuarios explorar y comprar
 ## Capturas de Pantalla
 
 1. **Página Principal**
-   ![Página Principal](assets/1. main.png)
+   ![Página Principal]('assets/1. main.png')
 
 2. **Visualización de Libro**
    ![Visualización de Libro](assets/2. libro.png)
