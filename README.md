@@ -36,12 +36,4 @@ Librería Online es una plataforma que permite a los usuarios explorar y comprar
 4. Administra libros si tienes un rol de administrador.
 5. Agrega libros al carrito y realiza compras.
 
-## Contribución
 
-Si deseas contribuir, sigue estos pasos:
-
-1. Haz un fork del repositorio
-2. Crea una rama para tu contribución (`git checkout -b feature/nueva-funcionalidad`)
-3. Realiza tus cambios y haz commit (`git commit -m 'Agrega nueva funcionalidad'`)
-4. Haz push a la rama (`git push origin feature/nueva-funcionalidad`)
-5. Abre un pull request
