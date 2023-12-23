@@ -70,4 +70,4 @@ Librería Online es una plataforma que permite a los usuarios explorar y comprar
 
    ![Proceso de Compra](assets/comprar.png)
 
-Estas capturas de pantalla proporcionan una vista previa de las características clave de la aplicación.
+CoitoNorte & Asociadosuwu
