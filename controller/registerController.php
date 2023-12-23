@@ -15,8 +15,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($checkEmailResult->num_rows > 0) {
         header('Location: ../views/register.php');
     } else {
-        // Insertar el nuevo usuario en la base de datos
-        $insertQuery = "INSERT INTO usuarios (nombre, email, password, rol) VALUES ('$name', '$email', '$password', 'cliente')";
+        // Hashear la contraseña antes de almacenarla en la base de datos
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+        // Insertar el nuevo usuario en la base de datos con la contraseña hasheada
+        $insertQuery = "INSERT INTO usuarios (nombre, email, password, rol) VALUES ('$name', '$email', '$hashedPassword', 'cliente')";
         
         if ($conn->query($insertQuery) === TRUE) {
             header('Location: ../views/login.php');
