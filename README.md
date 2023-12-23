@@ -39,27 +39,27 @@ Librería Online es una plataforma que permite a los usuarios explorar y comprar
 ## Capturas de Pantalla
 
 1. **Página Principal**
-   ![Página Principal](assets/main.png)
+   ![Página Principal](assets/1. main.png)
 
 2. **Visualización de Libro**
-   ![Visualización de Libro](assets/libro.png)
+   ![Visualización de Libro](assets/2. libro.png)
 
 3. **Búsqueda de Libros**
-   ![Búsqueda de Libros](assets/buscar.png)
+   ![Búsqueda de Libros](assets/3. buscar.png)
 
 4. **Categorías de Libros**
-   ![Categorías de Libros](assets/categorias.png)
+   ![Categorías de Libros](assets/4. categorias.png)
 
 5. **Tablero de Administrador**
-   ![Tablero de Administrador](assets/tablero.png)
+   ![Tablero de Administrador](assets/5. tablero.png)
 
 6. **Edición de Libro (Administrador)**
-   ![Edición de Libro](assets/editar.png)
+   ![Edición de Libro](assets/6. editar.png)
 
 7. **Carrito de Compras**
-   ![Carrito de Compras](assets/carro.png)
+   ![Carrito de Compras](assets/7. carro.png)
 
 8. **Proceso de Compra**
-   ![Proceso de Compra](assets/comprar.png)
+   ![Proceso de Compra](assets/8. comprar.png)
 
 Estas capturas de pantalla proporcionan una vista previa de las características clave de la aplicación.
