@@ -1,14 +1,15 @@
 <!-- verproducto.php -->
+
+<!-- Session ? -->
+<?php include('../controller/session.php'); ?>
+
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Librería Online</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+<!-- Head -->
+<?php include('./includes/head.php'); ?>
+
+<body>
 
     <style>
         /* Añade estos estilos para el botón de Deseo */
@@ -35,11 +36,7 @@
             background-color: orange;
             border-color: orange;
         }
-    </style>
-
-</head>
-
-<body>
+    </style>    
 
     <!-- Header -->
     <?php include('./includes/header.php'); ?>

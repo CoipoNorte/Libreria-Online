@@ -25,16 +25,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Cierra la conexión
     include('../closeconexion.php');
-
     // Redirigir a la página del carrito
     header('Location: ../views/verproducto.php?id=' . $libro_id);
-    
     exit();
 } else {
     // Cierra la conexión
     include('../closeconexion.php');
-    // Si el formulario no se envió correctamente, redirigir a la página de inicio o a donde desees
-    header('Location: ../views/main.php?id=' . $libro_id);
+    // Si el formulario no se envió correctamente, redirigir a la página de inicio
+    header('Location: ../views/main.php');
     exit();
 }
 ?>

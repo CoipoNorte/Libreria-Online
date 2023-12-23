@@ -19,7 +19,7 @@
         <div class="row">
             <!-- Formulario de Login -->
             <div class="col-lg-6 pb-4">
-                <form action="" method="post">
+                <form action="../controller/registerController.php" method="post">
                     <div class="mb-3">
                         <label for="name" class="form-label">Nombre:</label>
                         <input type="text" class="form-control" id="name" name="name" required>

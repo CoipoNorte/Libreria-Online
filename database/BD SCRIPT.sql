@@ -35,7 +35,8 @@ CREATE TABLE usuarios (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(255),
     email VARCHAR(255),
-    password VARCHAR(255)
+    password VARCHAR(255),
+    rol VARCHAR(255)
 );
 
 -- Insertar más libros de muestra
