@@ -16,12 +16,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['nombre'] = $row['nombre'];
         $_SESSION['rol'] = $row['rol'];
 
-        // Redirigir a la página de inicio de sesión exitosa o a donde desees
-        header("Location: ../views/main.php");
+        // Redirigir según el rol del usuario
+        if ($row['rol'] === 'admin') {
+            header("Location: ../views/dashboard.php");
+        } else {
+            header("Location: ../views/main.php");
+        }
         exit();
     } else {
         header("Location: ../views/login.php");
     }
+
     $conn->close();
 }
 ?>

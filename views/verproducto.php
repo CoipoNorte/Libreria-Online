@@ -1,7 +1,9 @@
 <!-- verproducto.php -->
 
 <!-- Session ? -->
-<?php include('../controller/session.php'); ?>
+<?php
+include('../controller/session.php');
+?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -36,7 +38,7 @@
             background-color: orange;
             border-color: orange;
         }
-    </style>    
+    </style>
 
     <!-- Header -->
     <?php include('./includes/header.php'); ?>
@@ -56,6 +58,8 @@
                 if ($result->num_rows > 0) {
                     // Obtener los detalles del libro
                     $libro = $result->fetch_assoc();
+                    // Después de verificar las credenciales y antes de redirigir
+                    $_SESSION['id_usuario'] = $libro['id']; // Suponiendo que el ID del usuario está en $libro['id']
                     ?>
                     <div class="d-flex flex-lg-row flex-column">
                         <div class="product-image col-md-3">
@@ -106,8 +110,6 @@
                                     <button type="submit" class="btn btn-primary m-0"> Añadir al Carro</button>
                                 </div>
                             </form>
-
-
                         </div>
                     </div>
 
@@ -145,9 +147,8 @@
                             <h3>Reseña</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint cupiditate temporibus do
                                 loribus impedit facere ab harum? Praesentium doloremque, repellat natus quisquam quas ab.
-                                Temporibus
-                                et magni consequuntur exercitationem perferendis. Quae?Lorem ipsum dolor, sit amet
-                                consectetur adipisicing elit. Sin
+                                Temporibus et magni consequuntur exercitationem perferendis. Quae?Lorem ipsum dolor, sit
+                                amet consectetur adipisicing elit. Sin
                                 t cupiditate temporibus doloribus impedit facere ab harum? Praesentium doloremque, repellat
                                 natus quisquam quas ab. Temporibus et magni co
                                 nsequuntur exercitationem perferendis. Quae?

@@ -62,6 +62,12 @@
             <a class="nav-link" href="error.php">Utilies escolares</a>
             <a class="nav-link" href="error.php">Novedades</a>
             <a class="nav-link" href="contacto.php">Contactanos</a>
+            <?php
+            // Verifica si el usuario tiene el rol de administrador
+            if (isset($_SESSION['id']) && $_SESSION['rol'] === 'admin') {
+                echo '<a class="nav-link " href="dashboard.php" style="color: yellow;" >Dashboard</a>';
+            }
+            ?>
         </div>
     </nav>
 </section>

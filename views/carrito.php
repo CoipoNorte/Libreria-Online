@@ -1,22 +1,10 @@
+<!-- carrito.php -->
 <?php
-function calcularTotalCarrito($conn)
-{
-    $sql = "SELECT SUM(libros.precio * carrito.cantidad) as total FROM carrito JOIN libros ON carrito.libro_id = libros.id";
-    $result = $conn->query($sql);
-    $row = $result->fetch_assoc();
-    return isset($row['total']) ? '$' . $row['total'] : '$0.00';
-}
-
+// Incluimos el archivo de sesión al inicio
+include('../controller/session.php');
 include('../conexion.php');
-
-// Obtener los productos del carrito
-$sql = "SELECT carrito.id, libros.titulo, libros.precio, carrito.cantidad FROM carrito JOIN libros ON carrito.libro_id = libros.id";
-$result = $conn->query($sql);
-
+include('../controller/carritoController.php');
 ?>
-
-<!-- Session ? -->
-<?php include('../controller/session.php'); ?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -36,6 +24,7 @@ $result = $conn->query($sql);
                 <tr>
                     <th>ID</th>
                     <th>Producto</th>
+                    <th>Imagen</th>
                     <th>Precio Unitario</th>
                     <th>Cantidad</th>
                     <th>Total</th>
@@ -56,13 +45,19 @@ $result = $conn->query($sql);
                                 <?php echo $row['titulo']; ?>
                             </td>
                             <td>
+                                <img src="../img/<?php echo $row['imagen']; ?>" alt="Imagen Producto" class="img-fluid"
+                                    style="max-width: 100px;">
+                            </td>
+                            <td>
                                 <?php echo '$' . $row['precio']; ?>
                             </td>
                             <td>
-                                <form action="../controller/actualizar_cantidad.php" method="post">
+                                <form action="../controller/actualizar_cantidad.php" method="post"
+                                    class="d-flex align-items-center">
                                     <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-                                    <input type="number" name="cantidad" value="<?php echo $row['cantidad']; ?>" min="1">
-                                    <button type="submit" class="btn btn-sm btn-success">Actualizar</button>
+                                    <input type="number" name="cantidad" value="<?php echo $row['cantidad']; ?>" min="1"
+                                        class="form-control rounded-start text-center border-light">
+                                    <button type="submit" class="btn btn-sm btn-success rounded-end">Actualizar</button>
                                 </form>
                             </td>
                             <td>
@@ -80,14 +75,15 @@ $result = $conn->query($sql);
             </tbody>
         </table>
         <?php if ($result->num_rows > 0) { ?>
-        <div class="text-end">
-            <strong>Total:</strong>
-            <?php echo calcularTotalCarrito($conn); ?>
-            <form action="../controller/comprar.php" method="post" class="mt-3">
-                <button type="submit" class="btn btn-primary">Comprar</button>
-            </form>
-        </div>
+            <div class="text-end">
+                <strong>Total a pagar:</strong>
+                <?php echo calcularTotalCarrito($conn, $_SESSION['id_usuario']); ?>
+                <form action="procesar_compra.php" method="post" class="mt-3">
+                    <button type="submit" class="btn btn-primary">Ir a Pagar</button>
+                </form>
+            </div>
         <?php } ?>
+
     </main>
 
     <!-- Footer -->
