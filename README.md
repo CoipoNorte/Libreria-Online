@@ -24,7 +24,7 @@ Librería Online es una plataforma que permite a los usuarios explorar y comprar
 
 ## Instalación
 
-1. Clona el repositorio: `git clone https://github.com/tuusuario/libreria-online.git`
+1. Clona el repositorio: `git clone https://github.com/CoipoNorte/Libreria-Online.git`
 2. Configura la base de datos con el script SQL proporcionado.
 3. Abre el proyecto en tu servidor local (XAMPP recomendado).
 
